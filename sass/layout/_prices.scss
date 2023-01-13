@@ -1,0 +1,110 @@
+.prices{
+    padding: 39px 50px 108px 50px;
+    & h2,.contact-h2{
+        //line-height: 5rem;
+        font-weight: 700;
+    }
+}
+
+.prices__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.prices-block{
+    & h2{
+        line-height: 5rem;
+        font-weight: 700;
+    }
+}
+.contact-block{
+    text-align: right;
+    & .contact-h2{
+        width:452px;    
+        & span{
+            color: $color-title;
+        }
+    }
+
+}
+.contact-h2{
+    @include font($size:4rem, $height: 5.2rem);
+}
+.contact-img{
+
+    float: right;
+    margin-right: -10px;
+    background-position: center;
+    
+
+}
+.contact-h2{
+    padding-bottom: 38px;
+   }
+.price-block{
+    margin-top: 58px;
+    padding: 33px 39px;
+    border: 1px solid $color-border;
+    border-radius: 20px;
+    max-width: 332px;
+
+}
+
+@media screen and (max-width:1000px) {
+    .prices{
+        padding-top: 37px;
+        padding-bottom: 82px;
+    }
+    .contact-h2{
+        @include font($size:2.5rem, $height: 3.5rem);
+        padding-top: 102px;
+        padding-bottom: 28px;
+    }
+    .contact-block .contact-h2{
+            width:296px;        
+    }
+    .prices-block h2{
+        padding-left: 16px;
+       
+    }
+    .price-block{
+        margin-top: 52px;
+    }
+}
+@media screen and (max-width:700px) {
+    .prices{
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .prices__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .prices-block h2{
+        text-align: center;
+        padding-right: 15px;
+    }
+    .price-block{
+    max-width: 224px;
+    }
+    .contact-img{
+        display: none;
+}
+.contact-block{
+    text-align: center;
+}
+.price-block{
+    margin-top: 25px;
+    padding: 29px 20px;
+}
+
+.contact-block .contact-h2{
+    padding-bottom: 22px;
+    padding-top: 19px;
+    text-align: center;
+    @include font($size:2rem, $height: 3.5rem, $weight:700);
+    width: 230px;
+}
+}

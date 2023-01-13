@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Plants</title>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper header__wrapper">
+    <div class="logo"><a href="./#">
+        <object data="./img/logo.svg" type="image/svg+xml">
+            <img src="./img/logo.svg" alt="logo">
+            Your browser does not support SVG
+        </object>
+    <span>Plants</span>    
+</a></div>
+
+    <nav class="header__nav">
+        <ul class="nav-list">
+            <li class="list-item active"><a href="#">Home</a></li>
+            <li class="list-item"><a href="#welcome">About us</a></li>
+            <li class="list-item"><a href="#service">Service</a></li>
+            <li class="list-item"><a href="#prices">Price</a></li>
+            <li class="list-item"><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="header__burger">
+        <span class="header__hamburger hamburger">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+        </span>  
+    </div>
+</div>
+<div class="header__popup">
+    <div class="popup__wrapper">
+        <div class="popup-close">
+            <span class="close__line"></span>
+        </div>
+        <nav class="header__popup-nav">
+            <ul class="popup__nav-list">
+                <li class="popup-list-item active"><a href="#">Home</a></li>
+                <li class="popup-list-item"><a href="#welcome">About us</a></li>
+                <li class="popup-list-item"><a href="#service">Service</a></li>
+                <li class="popup-list-item"><a href="#prices">Price</a></li>
+                <li class="popup-list-item"><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</header>
+<main>
+    <section class="welcome" id="welcome">
+        <div class="wrapper welcome__wrapper">
+            <img src="./img/leafs.png" alt="leafs" class="welcome__img">
+            <div class="welcome__desc">
+                <h1>We grow <span>plants</span> and give you oxygen</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <button class="welcome__button">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="wrapper about__wrapper">
+            <div class="about__desc">
+                <h2 class="about__desc-h2">We are <span>professional experienced</span> gardeners</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+            <img src="./img/houseplant.png" alt="houseplant" class="about__img"> 
+             
+        </div>
+    </section>
+    <section class="service" id="service">
+        <div class="wrapper service__wrapper">
+            <div class="service__header">
+                <h2>Service and our projects</h2>
+                <div class="service__header__btn">
+                <button class="service__btn garden__btn" data-title="garden">Gardens</button>
+                <button class="service__btn lawn__btn" data-title="lawn">Lawn</button>
+                <button class="service__btn planting__btn" data-title="planting">Planting</button>
+            </div>
+            </div>
+            <div class="service-blocks">
+                <div class="service-block garden" data-title="garden">
+                    <img src="./img/first.jpg" alt="first">
+                    <div class="block-desc">
+                        <h3>Garden care</h3>
+                        <p>Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="service-block planting" data-title="planting">
+                    <img src="./img/second1.png" alt="second">
+                    <div class="block-desc">
+                        <h3>Planting</h3>
+                        <p>Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="service-block lawn" data-title="lawn">
+                    <img src="./img/third.jpg" alt="third">
+                    <div class="block-desc">
+                        <h3>Lawn care</h3>
+                        <p>Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="service-block planting" data-title="planting">
+                    <img src="./img/fourth.jpg" alt="fourth">
+                    <div class="block-desc">
+                        <h3>Planting</h3>
+                        <p>Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="service-block garden" data-title="garden">
+                    <img src="./img/fifth.jpg" alt="fifth">
+                    <div class="block-desc">
+                        <h3>Garden care</h3>
+                        <p>Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+                <div class="service-block planting" data-title="planting">
+                    <img src="./img/sixth.jpg" alt="sixth">
+                    <div class="block-desc">
+                        <h3>Planting</h3>
+                        <p>Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prices" id="prices">
+        <div class="wrapper prices__wrapper">
+            <div class="prices-block">
+                <h2>Prices</h2>
+                <div class="price-block">
+                    
+                    <div class="basics-block color">
+                        <div class="basics" data-title="one"> <p>Basics</p><p data-path="one" class="arrow-price"></p></div>
+                        <div class="dropdown-content" data-target="one">
+                        <span class="line"></span>
+                        <p class="basics-desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                        <p class="basics-price"><span class="icon">$</span><span class="value">15</span> / per hour</p>
+                        <a href="#contacts" class="basics-btn">Order</a>
+                    </div>
+                    </div>
+                    <div class="basics-block color">
+                        <div class="basics" data-title="two"><p>Standard</p><p data-path="two" class="arrow-price"></p></div>
+                        <div class="dropdown-content" data-target="two">
+                        <span class="line"></span>
+                        <p class="basics-desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                        <p class="basics-price"><span class="icon">$</span><span class="value">25</span> / per hour</p>
+                        <a href="#contacts" class="basics-btn">Order</a>
+                    </div>
+                    </div>
+                    <div class="basics-block color">
+                        <div class="basics" data-title="three"><p>Pro care</p><p data-path="three" class="arrow-price"></p></div>
+                        <div class="dropdown-content" data-target="three">
+                        <span class="line"></span>
+                        <p class="basics-desc">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                        <p class="basics-price"><span class="icon">$</span><span class="value">25</span> / per hour</p>
+                        <a href="#contacts" class="basics-btn">Order</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-block">
+                <div class="contact-h2">Our best <span>gardeners</span> are ready to help you</div>
+                <button class="contact-button">Contact us</button>
+                <div><img src="./img/leafs_small.png" alt="leafs" class="contact-img"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="wrapper contacts__wrapper">
+            <img src="./img/contact_woman.png" alt="woman" class="contacts-img">
+            <h2 class="contacts__h2">Contact us</h2>
+            <div class="contacts__form">
+            <div class="first-line"><span>City</span>
+                <p class="arrow-contacts-img"></p>
+                </div> 
+             <ul class="select">
+            <li>Canandaigua, NY</li>
+            <li>New York City</li>
+            <li>Yonkers, NY</li>
+            <li>Sherrill, NY</li>
+           </ul>
+           <div class="city-block">
+            <div class="city-block-desc">
+                <ul class=block-title>
+                    <li>City:</li>
+                    <li>Phone:</li>
+                    <li>Office address:</li>
+                </ul>
+                <ul class="block-feature">
+                <li class="feature-item"></li>
+                <li class="feature-item"></li>
+                <li class="feature-item"></li>
+            </ul>
+            </div>
+            <a href="" class="city-block-link"><span class="city-block-btn">Call us</span></a>
+           </div>
+        </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="wrapper footer__wrapper">
+        <div class="github-link">
+            <span>©</span>
+            <span>2022</span>
+            <span><a href="https://github.com/FaizievaVenera">github</a></span>
+        </div>
+        <p><a href="https://rs.school/js-stage0/">Rolling Scopes School</a></p>
+        <div class="footer-nav">
+            <ul class="footer-ul">
+                <li><a href="https://instagram.com">
+                    <object type="image/svg+xml" data="./img/insta.svg" class="link-object">
+                        Your browser does not support SVG
+                        <img src="./img/insta.svg" alt="insta">
+                     </object></a></li>
+                <li><a href="https://facebook.com">
+                    <object type="image/svg+xml" data="./img/fb.svg" class="link-object">
+                        Your browser does not support SVG
+                        <img src="./img/fb.svg" alt="fb">
+                     </object></a></li>
+                <li><a href="https://twitter.com">
+                    <object type="image/svg+xml" data="./img/twr.svg" class="link-object">
+                        Your browser does not support SVG
+                        <img src="./img/twr.svg" alt="twr">
+                     </object></a></li>
+                <li><a href="https://pinterest.com">
+                    <object type="image/svg+xml" data="./img/pin.svg" class="link-object">
+                        Your browser does not support SVG
+                        <img src="./img/pin.svg" alt="pin">
+                     </object></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="popup.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

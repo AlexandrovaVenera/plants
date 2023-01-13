@@ -1,0 +1,100 @@
+
+.footer{
+    padding: 45px 50px;
+    & a{
+        color: #000;
+    }
+}
+.footer__wrapper{
+  display: flex;
+  justify-content: space-between;  
+  & p > a{
+    transition: all 0.5s ease;
+    &:hover{
+      color: $color-active;
+    }
+  }
+}
+.github-link span{
+    padding-right: 15px;
+    & a{
+        transition: all 0.5s ease;
+        &:hover{
+          color: $color-active;
+        }
+    }
+}
+.footer-ul{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-right:1px ;
+}
+.footer-ul li{
+    display: inline-block;
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+}
+.link-path {
+    transition: all 0.5s ease;
+}
+.link-svg {
+    cursor: pointer;
+    &:hover {
+        .link-path {
+            fill: $color-active;
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    
+.footer{
+    padding-top: 31px;
+    padding-bottom: 18px;
+
+}
+    .footer__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .github-link{
+        padding-left: 5px;
+    }
+    .footer span{
+        padding-right:12px;
+        &:first-child{
+            padding-right:18px ;
+        }
+        &:nth-child(2){
+            padding-right:20px ;
+        }
+        &:nth-child(3){
+            padding-right:15px ;
+        }
+    }
+    .footer span,.footer a{
+        @include font($size:2rem, $height:2.4rem);
+
+    }
+    .github-link{
+        padding-bottom: 15px;
+    }
+    .footer p{
+        padding-bottom: 22px;
+    }
+}
+
+@media screen and (max-width:500px) {
+.footer{
+    padding-top: 22px;
+    padding-bottom: 7px;
+    & p{
+        padding-bottom: 9px;
+    }
+}
+.github-link{
+    padding-left: 15px;
+}
+}

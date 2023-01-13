@@ -1,0 +1,176 @@
+.service{
+    background: $background-wrapper;
+    padding: 40px 50px 121px 50px;
+}
+
+.service-block img{
+    width: 329px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.service__header{
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 80px;
+    font-family: 'Inika', sans-serif;
+    & h2{
+        max-width: 305px;
+        color: $color-title;
+        margin-right: 142px;
+        display: inline-block;
+        
+    }
+   }
+
+   .service__btn{
+    color: $color-active;
+    border: 1px solid $color-active;
+    border-radius: 5px;
+    background: none;
+    text-align: center;
+    display: inline-block;
+    width: 161px;
+    margin-top: 3px;
+    padding-top: 11px;
+    @include font($size:2rem, $height:2.6rem);
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+        &:hover{
+            background: #E06733;
+            color: #FFFFFF;
+                }        
+    &:not(:last-child){
+        margin-right: 33px;
+    }
+}
+
+.garden__btn{
+    padding-right: 4px;
+}
+.lawn__btn{
+    padding-right: 1px;
+}
+.planting__btn{
+    padding-right: 2px;
+}
+   .service-blocks{
+    display: flex;
+    gap:  54px 116px;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+   .service-block{ 
+    transition: all 1s ease;
+    object-fit: cover;
+    height: 450px;
+    & img{
+        border-radius: 20px 20px 0px 0px;
+    }
+   }
+
+   .blur{
+    filter:blur(2px);
+   }
+ 
+   .block-desc{
+
+    margin-top: 0;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    top:-11px;
+    padding-bottom: 34  px;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+    & p{
+        padding-top: 14px;
+        padding-right: 3px;
+        @include font($size:1.6rem, $height: 2rem);
+        color:$color-h1;
+        padding-bottom: 34px;
+
+    }
+}
+.btn-hover{
+    background-color: #E06733;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:1175px) {
+    .service{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .service__header{
+       flex-direction: column;
+       align-items: flex-start;
+       margin-bottom: 40px;
+       & h2{
+        padding-bottom: 40px;
+       }
+    }
+    .service-blocks{
+        gap:38px 105px;
+    }
+    .service-block img{
+        max-width: 281px;
+        min-height: 350px;
+        object-fit: cover;
+        
+    }
+    .service__btn:not(:last-child){
+        margin-right: 34px;
+    }
+    .block-desc{
+        top:-11px;
+       & p{
+        padding-top: 12px;
+        display: inline-block;
+        padding-bottom: 16px;
+        padding-right: 0px;
+        width: 201px;
+        }
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .block-desc{
+        top:-7px;
+        & p{
+            padding-top: 9px;
+        }
+    }}
+
+    @media screen and (max-width:700px){
+        .service{
+            padding-left:25px ;
+            padding-right: 25px;
+            padding-top: 30px;
+            padding-bottom: 27px;
+    }
+        .service__header{
+            margin-bottom: 35px;
+        & h2{
+            padding-bottom: 36px;
+        }}
+        .service__btn{
+            @include font($size:1.5rem, $height:2rem);
+            width: 121px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-bottom: 5px;
+            &:not(:last-child){
+                margin-right: 6px;
+            }
+        }
+        .garden__btn{
+            padding-right: 0;
+        }
+        .service-blocks{
+            gap: 34px 105px;
+        }
+    }

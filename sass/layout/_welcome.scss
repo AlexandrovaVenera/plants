@@ -1,0 +1,89 @@
+.welcome{
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    top: -1px;
+    background-color: $background-wrapper;
+}
+
+.welcome__img{
+    padding-right: 210px;
+    position: relative;
+    top:0px;
+    right: 10px;
+    object-fit: cover;
+
+    
+}
+
+.welcome__desc{
+    padding-top: 46px;
+}
+.welcome {
+    & h1{
+        color:$color-h1;
+        margin-bottom:44px;
+    }
+    & span{
+    color:$color-title;
+}
+    & p{
+        max-width: 525px;
+        color: $color-text;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .welcome__img{
+        padding-right: 42px;
+    }
+}
+@media screen and (max-width:1000px) {
+
+    .welcome__img{
+        padding-right: 0px;
+        padding-left: 42px;
+        right: 0px;
+        min-width: 50%;
+        background-position:center center;
+        object-fit: contain;
+        margin-top: -55px;
+        margin-right: -5px;
+    }
+    .welcome__desc{
+        padding-top: 0;
+    }
+    .welcome h1{
+        margin-bottom: 30px;
+       
+    }
+}   
+@media screen and (max-width:800px){
+    .welcome p{
+        max-width: 341px;
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .welcome{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .welcome__img{
+        display: none;
+ 
+    }
+    .welcome h1{
+        margin-bottom: 20px;
+    }
+    .welcome p{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .welcome p{
+        margin-left: 0px;
+    }
+}
