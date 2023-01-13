@@ -540,7 +540,7 @@ button:hover {
   background-color: #D6E7D2;
 }
 .basics .arrow-price {
-  background: url("../../img/accordion_btn.svg");
+  background: url("./../img/accordion_btn.svg");
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -549,7 +549,7 @@ button:hover {
   margin-bottom: auto;
 }
 .basics .arrow-price-hover {
-  background: url("../../img/accordion_btn1.svg");
+  background: url("./../img/accordion_btn1.svg");
   rotate: 180deg;
 }
 .basics .arrow-img {
@@ -1473,7 +1473,7 @@ button:hover {
 
 .arrow-contacts-img {
   position: absolute;
-  background: url("../../img/accordion_btn1.svg");
+  background: url("./../img/accordion_btn1.svg");
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -1483,7 +1483,7 @@ button:hover {
 }
 
 .rotate {
-  background: url("../../img/drop_btn.svg");
+  background: url("./../img/drop_btn.svg");
 }
 
 .select {
