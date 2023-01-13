@@ -6,7 +6,6 @@
   display: flex;
   & > img{
     padding-right: 113px;
-    //width: 400px;
   }
   & h2{
     color:$color-title;
@@ -24,7 +23,6 @@
 }
 .first-line{
   cursor: pointer;
-  //margin-top: 96px;
   width: 450px; 
   padding: 5px 35px 5px 23px;
   background: #D6E7D2;
@@ -59,7 +57,7 @@
 }
 .arrow-contacts-img{
   position: absolute;
-  background: url('../../img/accordion_btn1.svg');
+  background: url('./../img/accordion_btn1.svg');
   
   width: 16px;
   height: 16px;
@@ -69,7 +67,7 @@
   right: 5px;
 }
 .rotate{
-  background: url('../../img/drop_btn.svg');
+  background: url('./../img/drop_btn.svg');
 
 }
 .select{
