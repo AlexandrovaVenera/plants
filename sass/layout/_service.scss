@@ -38,10 +38,10 @@
     padding-bottom: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
-        &:hover{
-            background: #E06733;
-            color: #FFFFFF;
-                }        
+        // &:hover{
+        //     background: #E06733;
+        //     color: #FFFFFF;
+        //         }        
     &:not(:last-child){
         margin-right: 33px;
     }
@@ -174,3 +174,6 @@
             gap: 34px 105px;
         }
     }
+
+    
+    

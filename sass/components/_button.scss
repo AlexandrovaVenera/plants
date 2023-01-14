@@ -34,11 +34,19 @@
     cursor: pointer;
     background-color: none;
 }
-button:hover{
-        background: #E06733;
-        color: #FFFFFF;
+// button:hover{
+//         background: #E06733;
+//         color: #FFFFFF;
+//     }
+ @media (pointer: fine) and (hover: hover) {
+        .service__btn:hover{
+       
+                background: #E06733;
+                color: #FFFFFF;
+                           
+        }
+    
     }
-
 
 @media screen and (max-width:1000px) {
     .welcome__button{
