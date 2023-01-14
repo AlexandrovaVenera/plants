@@ -484,7 +484,7 @@ h3 {
 }
 
 @media (pointer: fine) and (hover: hover) {
-  .service__btn:hover {
+  button:hover {
     background: #E06733;
     color: #FFFFFF;
   }
