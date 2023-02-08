@@ -19,52 +19,27 @@ let cityBlockOpen = false
 let active = false
 
 /*Price blocks */
-let intervalId
 document.querySelectorAll('.arrow-price').forEach(el => el.addEventListener('click', e=>{
   let menu = e.target.dataset.path
-  document.querySelectorAll('.basics').forEach(e=>{
-    if(!document.querySelector(`[data-title = ${menu}]`).classList.contains('color')){
-    e.classList.remove('color')
-    intervalId = setTimeout(()=>{
-      document.querySelector(`[data-title = ${menu}]`).classList.add('color')
-    },0)
+  let previous 
+  if(document.querySelector('.arrow-price-hover')){
+    previous = document.querySelector('.arrow-price-hover').dataset.path
+    console.log(previous,menu)
+  document.querySelector('.arrow-price-hover').classList.remove('arrow-price-hover')
   }
-  if(document.querySelector(`[data-title = ${menu}]`).classList.contains('color')){
-    intervalId = setTimeout(()=>{
-      document.querySelector(`[data-title = ${menu}]`).classList.remove('color')
-    },0)
+  if(document.querySelector('.basics.color')){
+     document.querySelector('.basics.color').classList.remove('color')
+   }
+  if(document.querySelector('.open-dropdown')){
+    document.querySelector('.open-dropdown').classList.remove('open-dropdown')
   }
-  })
-  document.querySelectorAll('.dropdown-content').forEach(e=>{
-    if(!document.querySelector(`[data-target = ${menu}]`).classList.contains('open')){
-      e.classList.remove('open-dropdown')
-      e.classList.remove('open')
-      document.querySelector(`[data-target = ${menu}]`).classList.add('open-dropdown')
-      intervalId = setTimeout(()=>{
-        document.querySelector(`[data-target = ${menu}]`).classList.add('open')
-      },0)
-    }
-    if(document.querySelector(`[data-target = ${menu}]`).classList.contains('open')){
-      clearTimeout(intervalId);
-      document.querySelector(`[data-target = ${menu}]`).classList.remove('open-dropdown')
-      intervalId = setTimeout(()=>{
-        document.querySelector(`[data-target = ${menu}]`).classList.remove('open')
-      },0)
-    }
-  })
-  document.querySelectorAll('.arrow-price').forEach(e=>{
-    if(!document.querySelector(`[data-path = ${menu}]`).classList.contains('up')){
-    e.classList.remove('arrow-price-hover')
-    intervalId = setTimeout(()=>{
-      document.querySelector(`[data-path = ${menu}]`).classList.add('arrow-price-hover')
-    },0)
-  }
-  if(document.querySelector(`[data-path = ${menu}]`).classList.contains('up')){
-    intervalId = setTimeout(()=>{
-      document.querySelector(`[data-path = ${menu}]`).classList.remove('arrow-price-hover')
-    },0)
-  }
-  })
+  if(previous!=menu){
+  intervalId = setTimeout(()=>{
+  e.target.classList.add('arrow-price-hover')
+  document.querySelector(`[data-title = ${menu}]`).classList.add('color')
+  document.querySelector(`[data-title = ${menu}]`).classList.add('color')
+  document.querySelector(`[data-target = ${menu}]`).classList.add('open-dropdown')
+  },0)}
 }))
   
   /*----------------------------*/
