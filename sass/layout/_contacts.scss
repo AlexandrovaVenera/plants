@@ -6,7 +6,6 @@
   display: flex;
   & > img{
     padding-right: 113px;
-    //width: 400px;
   }
   & h2{
     color:$color-title;
@@ -24,7 +23,6 @@
 }
 .first-line{
   cursor: pointer;
-  //margin-top: 96px;
   width: 450px; 
   padding: 5px 35px 5px 23px;
   background: #D6E7D2;
@@ -35,9 +33,7 @@
   justify-content: space-between;
   @include font($size:2rem, $height:4rem);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  &:hover{
-    background: $color-city-hover;
-  }
+
 }
 .contacts__btn{
   margin-top: 14px;
@@ -59,7 +55,7 @@
 }
 .arrow-contacts-img{
   position: absolute;
-  background: url('../../img/accordion_btn1.svg');
+  background: url('./../img/accordion_btn1.svg');
   
   width: 16px;
   height: 16px;
@@ -69,7 +65,7 @@
   right: 5px;
 }
 .rotate{
-  background: url('../../img/drop_btn.svg');
+  background: url('./../img/drop_btn.svg');
 
 }
 .select{
@@ -189,5 +185,10 @@
 @media screen and (max-width:325px) {
   .first-line{
     width: 250px;
+  }
+}
+@media (pointer: fine) and (hover: hover) {
+  .first-line:hover{
+    background: $color-city-hover;
   }
 }

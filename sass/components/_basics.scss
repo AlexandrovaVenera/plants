@@ -16,14 +16,11 @@
     align-items: flex-start;
     
   }
-  &:hover{
-      background-color: $color3-hover;
-  }
-  
+ 
 
   .arrow-price{
 
-      background: url('../../img/accordion_btn.svg');
+      background: url('./../img/accordion_btn.svg');
   
       width: 16px;
       height: 16px;
@@ -33,11 +30,7 @@
       margin-bottom: auto;
       
     }
-    .arrow-price-hover{
 
-      background: url('../../img/accordion_btn1.svg');
-      rotate: 180deg;
-    }
     .arrow-img{
       position: absolute;
       top:6px;
@@ -124,3 +117,16 @@ display: none;
 }
   }
 }
+
+    @media (pointer: fine) and (hover: hover) {
+      .basics:hover{
+        background-color: $color3-hover;
+    }
+    .arrow-price-hover{
+
+      background: url('./../img/accordion_btn1.svg');
+      rotate: 180deg;
+    }
+    
+    
+    }

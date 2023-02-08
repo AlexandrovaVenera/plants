@@ -483,11 +483,12 @@ h3 {
   background-color: none;
 }
 
-button:hover {
-  background: #E06733;
-  color: #FFFFFF;
+@media (pointer: fine) and (hover: hover) {
+  button:hover {
+    background: #E06733;
+    color: #FFFFFF;
+  }
 }
-
 @media screen and (max-width: 1000px) {
   .welcome__button {
     margin-top: 35px;
@@ -536,21 +537,14 @@ button:hover {
   justify-content: space-between;
   align-items: flex-start;
 }
-.basics:hover {
-  background-color: #D6E7D2;
-}
 .basics .arrow-price {
-  background: url("../../img/accordion_btn.svg");
+  background: url("./../img/accordion_btn.svg");
   width: 16px;
   height: 16px;
   border-radius: 50%;
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
-}
-.basics .arrow-price-hover {
-  background: url("../../img/accordion_btn1.svg");
-  rotate: 180deg;
 }
 .basics .arrow-img {
   position: absolute;
@@ -650,6 +644,15 @@ button:hover {
   }
   .basics-block:not(:last-child) {
     margin-bottom: 13px;
+  }
+}
+@media (pointer: fine) and (hover: hover) {
+  .basics:hover {
+    background-color: #D6E7D2;
+  }
+  .arrow-price-hover {
+    background: url("./../img/accordion_btn1.svg");
+    rotate: 180deg;
   }
 }
 .city-block {
@@ -1147,10 +1150,6 @@ button:hover {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.service__btn:hover {
-  background: #E06733;
-  color: #FFFFFF;
-}
 .service__btn:not(:last-child) {
   margin-right: 33px;
 }
@@ -1449,9 +1448,6 @@ button:hover {
   font-style: normal;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.first-line:hover {
-  background: #C1E698;
-}
 
 .contacts__btn {
   margin-top: 14px;
@@ -1473,7 +1469,7 @@ button:hover {
 
 .arrow-contacts-img {
   position: absolute;
-  background: url("../../img/accordion_btn1.svg");
+  background: url("./../img/accordion_btn1.svg");
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -1483,7 +1479,7 @@ button:hover {
 }
 
 .rotate {
-  background: url("../../img/drop_btn.svg");
+  background: url("./../img/drop_btn.svg");
 }
 
 .select {
@@ -1592,6 +1588,11 @@ button:hover {
 @media screen and (max-width: 325px) {
   .first-line {
     width: 250px;
+  }
+}
+@media (pointer: fine) and (hover: hover) {
+  .first-line:hover {
+    background: #C1E698;
   }
 }
 .footer {
